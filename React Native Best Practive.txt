@@ -1,0 +1,190 @@
+1-) JDK kur
+JAVA => Çevresel değişkenini tanımla
+New => JAVA_HOME => C:\Program Files\Microsoft\jdk-17.0.13.11-hotspot\
+PATH => %JAVA_HOME%\bin
+$ Java --version (java 17.0.12 2024-07-16 LTS)
+
+##########################
+2-) ANDROID STUDIO KUR 
+ADB(Android Debug Bridge) => Çevresel değişkenini tanımla
+$ adb --version
+ANDROID => Çevresel değişkenini tanımla
+New => ANDROID_HOME => C:\Users\ysfek\AppData\Local\Android\Sdk
+%ANDROID_HOME%\emulator
+%ANDROID_HOME%\platform-tools
+
+
+$ adb --version
+Android Debug Bridge version 1.0.41
+Version 35.0.2-12147458
+Installed as C:\Users\ysfek\AppData\Local\Android\Sdk\platform-tools\adb.exe
+Running on Windows 10.0.22631
+
+###########################
+3-) ADB (Android Debug Bridge) => Android İşletim sistemi ile çalışan cihazlarla işetişim kurmak ve onları yönetmek için kullandığımız komut aracıdır. 
+
+NOT: ADB andrıid studio kurduğumuzda geliyor
+ADB(Android Debug Bridge) => Çevresel değişkenini tanımla
+$ adb --version
+ANDROID => Çevresel değişkenini tanımla
+New => ANDROID_HOME => C:\Users\ysfek\AppData\Local\Android\Sdk
+%ANDROID_HOME%\emulator
+%ANDROID_HOME%\platform-tools
+
+
+$ adb --version
+Android Debug Bridge version 1.0.41
+Version 35.0.2-12147458
+Installed as C:\Users\ysfek\AppData\Local\Android\Sdk\platform-tools\adb.exe
+Running on Windows 10.0.22631
+
+
+
+$ adb --version
+$ adb devices
+$ adb install path/to/your/app.apk (Uygulama Yükle)
+$ adb unistall path/to/your/app.apk (Uygulama Sil)
+$ adb shell
+$ adb logcat
+$ adb kill-server
+$ adb start-server
+$ adb error
+
+
+##########################################
+##########################################
+4-) MAVEN
+New MAVEN_HOME => C:\ProgramData\chocoportable\lib\maven\apache-maven-3.9.9 
+PATH => %MAVEN_HOME%\bin
+
+##########################
+5-) CHOCO 
+Windows üzerinde Powershell terminalinden programlamalar yüklemek istiyorsak paket yönetimi olan choco yüklemek
+choco --version
+2.4.1
+Set-ExecutionPolicy Bybass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')
+
+$ choco install nodejs.install python2
+$ choco install nodejs-lts microsoft-openjdk17
+
+
+##########################################
+##########################################
+6-) NODE JS
+New NVM_SYMLINK => C:\nvm4w\nodejs
+PATH => %NVM_SYMLINK%
+
+
+##########################################
+##########################################
+7-) NPM
+New NPM_HOME => C:\Users\ysfek\AppData\Roaming\npm
+PATH => %NPM_HOME%
+
+
+###########################
+###########################
+8-) NVM (Node Version Manager)
+Node.js farklı sürümlerini yönetmemize yarayan komut satırıdır.
+
+~~POWERSHELL Yönetici Olarak Aç~~
+$ nvm --version(1.2.2.)
+$ nvm install latest
+$ nvm use latest 
+$ nvm install 14.17.0
+$ nvm use 14.17.0
+$ nvm ls (Yüklü Node.js sürümlerini listele)
+$ nvm ls-remote 
+
+NVM Not aşağıdaki path otomatik geliyor
+New NVM_HOME => C:\Users\ysfek\AppData\Roaming\nvm
+PATH => %NVM_HOME%
+
+
+
+############################
+############################
+9-) NPM  
+
+## NPM ##
+
+C:\Users\ysfek\AppData\Roaming\npm
+
+## NPM LİST ##
+$ npm -g list
+
+## NPM CLEAN ##
+$ npm cache clean --force 
+
+## NPM INSTALL ##
+$ npm install -g typescript
+
+## NPM UNINSTALL ##
+$ npm uninstall -g typescript
+
+## NPM OTHER ##
+$ npm update
+$ npm install
+$ npm i
+
+$ npm --verison
+
+$ npm start --reset-cache
+$ npm install -g npm
+$ npm install latest
+
+$ rm -rf node_modules
+$ npm install
+
+############################
+############################
+10-) VERSION
+$ java --verison
+$ javac --verison
+
+$ adb --verison
+
+$ choco --version
+
+$ node -v
+$ npm -v
+$ nvm -version
+
+$ mvn -v
+$ git -v
+
+############################
+############################
+11-) REACT NATİVE YÜKLEME
+
+NOT: Android Stıdio Device açık olmalıdır
+
+$ npm uninstall -g react-native-cli
+$ npm install -g typescript
+$ npm install -g npm 
+
+$ choco install nodejs.install python2
+$ choco install nodejs-lts microsoft-openjdk17
+
+~~POWERSHELL Yönetici Olarak Aç~~
+$ nvm install latest
+$ nvm use latest 
+ 
+
+$ npx @react-native-community/cli@latest init TodoList
+$ cd TodoList
+$ ls -all
+$ code .
+$ npx react-native start
+$ a => android istiyorsam
+$ i => ios istiyorsam
+
+
+ What went wrong:
+java.io.UncheckedIOException: Could not move temporary workspace
+android > gradle > wrapper > gradle-wrapper.properties => distributionUrl=https\://services.gradle.org/distributions/gradle-8.10.1-all.zip
+
+$ npx react-native run-android
+
+$ npx react-native doctor
+
